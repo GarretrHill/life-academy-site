@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f7f7f0; /* Light background for better contrast */
+    }
+
+    header {
+      background: url('assets/life-academy-pics/CoverPhotoFB.png') center no-repeat;
+      background-position: center 45%;
+      background-size: cover;
+      background-color: #f7f7f0;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      color: #f7f7f0;
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 600px;
+      clip-path: inset(330px 0 0 140px); /* top right bottom left */
+      filter: invert(1);
+      margin-bottom: 0rem;
+    }
+
+    .header-corner-img {
+      /* Removed: no longer needed */
+      display: none;
+    }
+
+    .centered-header-img {
+      display: block;
+      margin: 2rem auto 0 auto;
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 0; /* Remove default margin */
+    }
+
+    nav {
+      background: #002340;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #f7f7f0;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #86cde3;
+    }
+
+    section {
+      padding: 4rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #28622e;
+      text-align: center;
+    }
+
+    .section-image {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .section-image img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .photo-placeholder {
+      width: 100%;
+      height: 250px;
+      background-color: #d0dce4;
+      border: 2px dashed #4ca1af;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4ca1af;
+      margin: 1.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 2rem;
+      margin-top: 1rem;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #002340;
+      color: #f7f7f0;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background: #86cde3;
+    }
+
+    footer {
+      background: #002340;
+      color: #f7f7f0;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    .spacer {
+      height: 2rem;
+    }
+
+    .contact-info p {
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#programs">Programs</a>
+    <a href="#admissions">Admissions</a>
+    <a href="#staff">Faculty & Staff</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <img class="centered-header-img" src="assets/life-academy-pics/_LACRESTFC.png" alt="Center Image" />
+
+  <section id="calendar">
+    <h2 class="section-title">SCHOOL CALENDAR</h2>
+    <p style="text-align: center;">View our official academic calendar for key dates and holidays.</p>
+    <div style="text-align: center; margin-top: 1rem;">
+      <a class="button" href="assets/pdf/2025-26 School Calendar.pdf" target="_blank">View Calendar</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">OUR MISSION</h2>
+    <p style="text-align: left;">To provide students with an academically superior education founded upon Biblical principles which trains students to live with purpose and integrity.</p>
+    <div class="section-image">
+    <img src="assets/life-academy-pics/DSC00156.jpg" alt="Campus or Classroom">
+    </div>
+  </section>
+
+  <section id="programs">
+    <h2 class="section-title">PROGRAMS</h2>
+    <p>At Life Academy, our approach to education is grounded in biblical truth and academic excellence. We use the Apostolic Bible Curriculum, a Spirit-led program designed to help students build a strong foundation in the Apostolic doctrine. This curriculum is based on the teachings of respected leaders like Bishop Joel Holmes and Bishop Larry Booker. It helps students grow in their understanding of the Bible, develop Christian character, and walk in spiritual maturity. Our goal is to teach, disciple, and equip students to live boldly and faithfully for Christ.
+
+We also incorporate the Abeka curriculum, a trusted Christian academic program for Pre-K through 12th grade. Created by Abeka Book, a ministry of Pensacola Christian College, this curriculum supports high academic achievement while reinforcing a biblical worldview across every subject.</p>
+    <div class="section-image">
+    <img src="assets/life-academy-pics/DSC00186.jpg" alt="Campus or Classroom">
+    </div>
+  </section>
+
+  <section id="admissions">
+  <h2 class="section-title">ADMISSIONS</h2>
+  <p>We are currently accepting applications for the 2025–2026 academic year. Please complete the application below and then schedule your interview using the calendar below.</p>
+  <div style="text-align: center; margin: 2rem 0;">
+    <a class="button" href="https://docs.google.com/forms/d/1K-5ZsSkxgUTgmh9W1LlWIE62hiYU4f27Zn9Jtv7cVaY/edit" target="_blank">Student Application</a>
+  </div>
+  <div class="section-image">
+    <img src="assets/life-academy-pics/DSC00179.jpg" alt="Campus or Classroom">
+  </div>
+
+  <!-- Calendly Embed -->
+    <div style="margin-top: 2rem;">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/lifeacademyofsilsbee/30min" style="min-width:320px;height:700px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+  </section>
+
+    <section id="supplies">
+    <h2 class="section-title">SCHOOL SUPPLY LISTS</h2>
+    <p style="text-align: center;">Click below to download supply lists for each grade level.</p>
+      <div style="text-align: center; margin-top: 1rem;">
+        <a class="button" href="assets/pdf/pre-k-supply-list.pdf" target="_blank">Pre-K Supply List</a><br><br>
+        <a class="button" href="assets/pdf/kinder-supply-list.pdf" target="_blank">Kindergarten Supply List</a><br><br>
+        <a class="button" href="assets/pdf/1st-3rd-supply-list.pdf" target="_blank">1st–3rd Grade Supply List</a><br><br>
+        <a class="button" href="assets/pdf/4th-6th-supply-list.pdf" target="_blank">4th–6th Grade Supply List</a><br><br>
+        <a class="button" href="assets/pdf/upper-level-supply-list.pdf" target="_blank">Upper Level Supply List</a>
+      </div>
+    </section>
+
+
+  <section id="staff">
+    <h2 class="section-title">FACULTY AND STAFF</h2>
+    <ul>
+      <li><strong>Megan Van Dorn</strong> – Administrator</li>
+      <li><strong>Elizabeth Glass</strong> – Office Assistant</li>
+      <li><strong>Savanna Dubose</strong> – Financial Secretary</li>
+      <li><strong>Annette Frey</strong> – PreK4 Teacher</li>
+      <li><strong>Darlin McWilliams</strong> – Kindergarten Teacher</li>
+      <li><strong>Madison Glass</strong> – 1st–3rd Grade Teacher</li>
+      <li><strong>Kayla Grant</strong> – 4th–6th Grade Teacher</li>
+      <li><strong>Morgan Hill</strong> – Upper Level English & History; Art Teacher</li>
+      <li><strong>Randi Cahill</strong> – Upper Level Math Teacher</li>
+      <li><strong>Erin White</strong> – Elementary Science Teacher</li>
+      <li><strong>Nathaniel White</strong> – Upper Level Bible Teacher</li>
+      <li><strong>Bethany Jennings</strong> – Music Teacher</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">CONTACT US</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:lifeacademyofsilsbee@gmail.com">lifeacademyofsilsbee@gmail.com</a></p>
+      <p>Phone: <a href="tel:4096732400">409-673-2400</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Life Academy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+<script>
+  // Smooth scroll for navigation links
+  document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
